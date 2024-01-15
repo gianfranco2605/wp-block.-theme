@@ -28,6 +28,7 @@ add_action('after_setup_theme', 'block_theme_support');
 if (!function_exists('block_theme_styles')) :
 
     function block_theme_styles()
+
     {
         //Register Stylesheets
         wp_enqueue_style('block-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
