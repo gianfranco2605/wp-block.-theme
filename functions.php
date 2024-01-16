@@ -38,3 +38,11 @@ if (!function_exists('block_theme_styles')) :
 endif;
 
 add_action('wp_enqueue_scripts', 'block_theme_styles');
+
+function excerpt_custom_length($length)
+{
+
+    return 15;
+}
+
+add_filter('excerpt_length', 'excerpt_custom_length');
